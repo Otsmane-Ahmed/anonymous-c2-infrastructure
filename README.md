@@ -2,7 +2,7 @@
 
 A Proof-of-Concept (PoC) Command and Control (C2) infrastructure that operates entirely over **Tor Hidden Services**. This project demonstrates how to build a resilient, anonymous, and cross-platform C2 system that bypasses firewalls and NAT without requiring port forwarding or public IPs.
 
-![Cross Platform Connection](img/cross_platform_c2_connection.png)
+![Cross Platform Connection](img/active_c2_session_demo.png)
 
 ## Key Features
 
@@ -25,15 +25,15 @@ All communication between the implant and the C2 server is encrypted by the Tor 
 - **No SSL Certificates Needed**: Encryption is inherent to `.onion` services.
 - **Traffic Analysis Resistant**: Network sniffers (like Wireshark) only see encrypted Tor cells.
 
-![Wireshark Proof](img/wireshark_encryption_proof.png)
+![Wireshark Proof](img/network_traffic_analysis_encrypted.png)
 
 ### 4. Automated Payload Builder
 Includes a `builder.py` script that automates the cross-compilation process.
 - **One-Click Build**: Generates a standalone Windows executable (`.exe`) from Python source.
 - **Embedded Config**: Automatically embeds the C2's `.onion` address into the payload.
 
-![Builder Process](img/payload_builder_process.png)
-![Generated Artifact](img/generated_payload_artifact.png)
+![Builder Process](img/automated_implant_compilation.png)
+![Generated Artifact](img/compiled_malware_sample.png)
 
 ### 5. Asynchronous Beaconing
 The implant does not maintain a persistent connection. Instead, it "beacons" (checks in) at randomized intervals.
