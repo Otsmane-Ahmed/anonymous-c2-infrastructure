@@ -1,0 +1,8 @@
+flask
+sqlalchemy
+stem
+requests
+pysocks
+click
+cryptography
+pyinstaller

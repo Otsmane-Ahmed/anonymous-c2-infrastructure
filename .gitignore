@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+myvenv/
+*.db
+.DS_Store
+c2_hidden_service/
+c2_hidden_service_debug/
+build/
+dist/
+*.spec
+*.egg-info/
